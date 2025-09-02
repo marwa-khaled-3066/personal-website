@@ -1,0 +1,148 @@
+body{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient(rgba(235, 203, 221, 0.5)),
+    url("https://marketplace.canva.com/EAFhwfMq3ds/1/0/1600w/canva-colorful-cute-cats-illustration-desktop-wallpaper-KBBZLdpjLcM.jpg");
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* h2 in header section only */
+header h2{
+    color:white;
+    padding-left: 20px;
+    text-shadow: 2px 2px 5px #071c4b;
+}
+/* all other h2s in page */
+h2{
+    color: rgba(34, 57, 133);
+}
+
+header{
+    z-index: 1;
+    background: rgba(45, 78, 121, 0.8);
+    backdrop-filter: blur(5px);
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    box-shadow: 2px 2px 5px #071c4b;
+}
+/* Profile section only has special text alignment and width */
+.profile {
+    text-align: center;
+    padding: 20px 40px;
+    max-width: 800px;
+    box-shadow: 2px 2px 5px #071c4b;
+}
+
+/* All sections general properties */
+section{
+    padding: 15px;
+    max-width: 1200px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.705);
+    border-radius: 15px;
+    margin: 20px auto;
+    border: 1px solid rgba(45, 78, 121);
+    box-shadow: 2px 2px 5px #071c4b;
+}
+/* Navitgation bar */
+nav ul{
+    color: white;
+}
+nav ul li{
+    display: inline-block;
+    justify-content: space-between;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: inherit;
+}
+/* Footer */
+footer{
+    text-align: center;
+    padding: 2px;
+    color: white;
+    background: rgba(45, 78, 121, 0.8);
+    backdrop-filter: blur(5px);
+    display: relative;
+}
+/* Profile image */
+#profpic{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    box-shadow: 2px 2px 5px #071c4b;
+    border-color:  rgba(34, 57, 133);
+    transition: transform 0.5s;
+}
+#profpic:hover{
+    transform: scale(1.1);
+}
+
+/* Skills grid */
+.skills {
+    display: flex;
+    grid-template-columns: (repeat(auto-fit, minmax(120px, 1fr)));
+    gap: 15px;
+}
+.skill{
+    background: linear-gradient(135deg, rgb(248, 235, 229), rgb(214, 167, 167));
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.5s;
+    box-shadow: 2px 2px 5px #071c4b;
+    /* font-weight: 600; */
+}
+.skill:hover{
+    background: linear-gradient(135deg, blue, white);
+    transform: translateY(-5px);
+}
+/* Projects grid */
+.projects {
+    display: flex;
+    grid-template-columns: (repeat(auto-fit, minmax(120px, 1fr)));
+    gap: 20px;
+}
+.project{
+    background: linear-gradient(135deg, rgb(248, 235, 229), rgb(199, 152, 152));
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.5s;
+    box-shadow: 2px 2px 5px #071c4b;
+}
+
+.project:hover{
+    transform: translateY(-7px);
+}
+
+.project button:hover{
+    background: linear-gradient(135deg, blue, white);
+}
+/* Contact form */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 500px;
+}
+form input, form textarea {
+   padding: 5px;
+   border-radius: 10px;
+}
+form button{
+    margin-left: 135px;
+    max-width: 200px;
+    box-shadow: 2px 2px 5px #071c4b;
+}
