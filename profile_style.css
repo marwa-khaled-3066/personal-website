@@ -60,7 +60,13 @@ nav ul{
 nav ul li{
     display: inline-block;
     justify-content: space-between;
+    border-radius: 30%;
 }
+
+nav ul li:hover{
+    background: rgba(132, 208, 238, 0.637);
+}
+
 nav ul li a{
     text-decoration: none;
     padding: 5px 20px;
@@ -145,4 +151,21 @@ form button{
     margin-left: 135px;
     max-width: 200px;
     box-shadow: 2px 2px 5px #071c4b;
+}
+
+.left, .right {
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
